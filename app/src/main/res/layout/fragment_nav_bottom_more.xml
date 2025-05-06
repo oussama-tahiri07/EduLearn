@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavBottom.MoreFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/notification"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/site_subscription"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="site subscription"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:iconPadding="15dp" />
+
+    <Button
+        android:id="@+id/download"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/notification"
+        android:drawableLeft="@drawable/qr_code"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="Scan QR code"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:iconPadding="15dp" />
+
+</RelativeLayout>

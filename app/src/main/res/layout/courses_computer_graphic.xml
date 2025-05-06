@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Courses.ComputerGraphic"
+    android:background="@drawable/graduation_hat6">
+
+    <Button
+        android:id="@+id/back"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/back"
+        android:drawableTint="@color/white"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/viewpager_bkg">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CG"
+        android:text="Computer Graphic (2022-2023)"
+        android:layout_marginTop="290dp"
+        android:textSize="26dp"
+        android:paddingLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="Teacher"
+        android:layout_below="@id/CG"
+        android:textSize="21dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/teacher1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawableRight="@drawable/arrow_right"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawablePadding="15dp"
+        android:text="Ha Nguyen Hoang"
+        android:textSize="22dp"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:cursorVisible="true"/>
+
+    <TextView
+        android:id="@+id/teacher2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawableRight="@drawable/arrow_right"
+        android:layout_below="@id/teacher1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawablePadding="15dp"
+        android:text="Huynh Vinh Nam"
+        android:gravity="center_vertical"
+        android:textSize="22dp"
+        android:paddingTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#9CDBE3"
+        android:text="You can not enroll yourself in this course"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/infor_ic"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Courses.MobileApp.dashboardMobileApp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+    <Button
+        android:id="@+id/back"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/back"
+        android:text="Information and Communication Technology"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:textSize="16dp"
+        android:drawableRight="@drawable/more_3dot"
+        android:paddingEnd="-1dp"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:text="Course categories"
+        android:layout_marginStart="10dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/second_year"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textView1"
+        android:drawableLeft="@drawable/cate_folder"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="Second year"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/third_year"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/second_year"
+        android:drawableLeft="@drawable/cate_folder"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="Third year"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+
+    <Button
+        android:id="@+id/mobile_button3"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/third_year"
+        android:drawableLeft="@drawable/cate_folder"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="DS BACHELOR PROGRAM"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobile_button3"
+        android:text="Courses"
+        android:layout_marginStart="10dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/mobile_button4"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView2"
+        android:drawableLeft="@drawable/machine"
+        android:text="Test Course ICT"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/mobile_button5"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mobile_button4"
+        android:drawableLeft="@drawable/web"
+        android:text="Cyber Security Syllabus 2019-2020"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/mobile_button6"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mobile_button5"
+        android:drawableLeft="@drawable/mobile"
+        android:text="ICT course Syllabus 2020-2021"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/mobile_button7"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mobile_button6"
+        android:drawableLeft="@drawable/database"
+        android:text="ICT Syllabus"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+</RelativeLayout>

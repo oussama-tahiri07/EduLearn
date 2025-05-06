@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainHome.FragmentHomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="361dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/background2" />
+
+    <Button
+        android:id="@+id/categories"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:drawableLeft="@drawable/baseline_folder_24"
+        android:fontFamily="@font/abeezee"
+        android:text="Course Categories"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        app:iconPadding="20dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/courses"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/baseline_menu_book_24"
+        android:fontFamily="@font/abeezee"
+        android:text="My Courses"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        app:iconPadding="20dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+</RelativeLayout>

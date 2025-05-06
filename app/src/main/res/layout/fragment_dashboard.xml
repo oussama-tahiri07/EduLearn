@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainHome.FragmentDashboard">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:text="Course Overview"
+        android:textColor="#423D3D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/edittextbackground"
+        android:drawableLeft="@drawable/find"
+        android:hint="Find my courses"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:drawableRight="@drawable/arrow"
+        android:text="In progress"
+        android:textColor="#555252"/>
+
+    <Button
+        android:id="@+id/mobile"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/button1"
+        android:drawableLeft="@drawable/mobile"
+        android:drawableRight="@drawable/more_3dot"
+        android:text="Mobile Application Development"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/web"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:drawableLeft="@drawable/web"
+        android:drawableRight="@drawable/more_3dot"
+        android:layout_below="@id/mobile"
+        android:text="Web Application Development"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/machine"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:drawableLeft="@drawable/machine"
+        android:drawableRight="@drawable/more_3dot"
+        android:layout_below="@id/web"
+        android:text="Machine Learning and Data Mining"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/database"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/machine"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/database"
+        android:drawableRight="@drawable/more_3dot"
+        android:layout_centerHorizontal="true"
+        android:text="Advanced Database"
+        android:textAlignment="textStart"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+</RelativeLayout>
