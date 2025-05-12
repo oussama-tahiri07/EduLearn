@@ -26,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -37,13 +37,21 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    // Supabase dependencies (using Kotlin DSL syntax)
-    implementation("io.github.jan-tennert.supabase:postgrest-kt:1.4.0")
-    implementation("io.github.jan-tennert.supabase:realtime-kt:1.4.0")
-    implementation("io.github.jan-tennert.supabase:gotrue-kt:1.4.0")
+// Supabase core
+    implementation("io.github.jan-tennert.supabase:supabase-kt:1.4.0")
 
-    // Gson for JSON parsing
+// Supabase modules
+    implementation("io.github.jan-tennert.supabase:gotrue-kt:1.4.0")
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:1.4.0")
+
+// Coroutines (needed by supabase-kt)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+// JSON
     implementation("com.google.code.gson:gson:2.10.1")
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -9,8 +9,8 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.edulearn.moodle.R;
-import com.example.edulearn.moodle.courseCategories.CourseCategories;
+import com.example.edulearn.R;
+import com.example.edulearn.courseCategories.CourseCategories;
 
 public class FragmentSiteHome extends Fragment {
 

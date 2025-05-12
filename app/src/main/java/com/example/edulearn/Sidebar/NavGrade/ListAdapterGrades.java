@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-import com.example.edulearn.moodle.R;
+import com.example.edulearn.R;
 
 public class ListAdapterGrades extends ArrayAdapter<UserGrades>{
 

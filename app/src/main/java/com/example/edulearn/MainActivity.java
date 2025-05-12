@@ -1,5 +1,52 @@
 package com.example.edulearn;
 
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private DrawerLayout drawerLayout;
+    private NavigationView navDrawer;
+    private BottomNavigationView bottomNavigation;
+    private BottomAppBar bottomAppBar;
+    private Toolbar toolbar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // View binding
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navDrawer = findViewById(R.id.nav_drawer);
+        bottomNavigation = findViewById(R.id.bottom_navigation);
+        bottomAppBar = findViewById(R.id.bottomAppBar);
+        toolbar = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar); // Required for the Toolbar to function
+
+        // You can leave out listeners for now if you only want a static UI
+    }
+}
+
+
+
+
+/*
+import android.content.Intent;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,20 +56,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
-
-import io.github.jan.supabase.gotrue.user.UserInfo;
-import io.github.jan.supabase.SupabaseClient;
-import io.github.jan.supabase.gotrue.GoTrue;
 import com.example.edulearn.NavBottom.BlogsFragment;
 import com.example.edulearn.NavBottom.CalendarFragment;
 import com.example.edulearn.NavBottom.MoreFragment;
@@ -33,6 +66,11 @@ import com.example.edulearn.Sidebar.NavGrade.NavGradesFragment;
 import com.example.edulearn.Sidebar.NavPreferencesActivity;
 import com.example.edulearn.SignInUp.LoginActivity;
 import com.example.edulearn.mainHome.FragmentHomeActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.navigation.NavigationView;
+
+import io.github.jan.supabase.gotrue.user.User;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
@@ -40,8 +78,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     FragmentManager fragmentManager;
 
-    SupabaseClient supabase;
-    UserInfo user;
+    User user;
     TextView textView;
 
     @Override
@@ -49,10 +86,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize Supabase
-        supabase = SupabaseHelper.getClient();
-        user = supabase.getGoTrue().currentUserOrNull();
-
+        // Check if user is logged in
+        user = SupabaseHelper.getClient().getGoTrue().currentUserOrNull();
         if (user == null) {
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intent);
@@ -118,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (itemId == R.id.nav_settings) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NavPreferencesActivity()).commit();
         } else if (itemId == R.id.nav_logout) {
-            supabase.auth.signOut();
+            SupabaseHelper.getClient().getGoTrue().signOut();
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
@@ -142,4 +177,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         transaction.replace(R.id.fragment_container, fragment);
         transaction.commit();
     }
-}
+} */

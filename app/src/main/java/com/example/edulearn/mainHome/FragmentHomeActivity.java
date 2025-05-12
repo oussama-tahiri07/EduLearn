@@ -12,7 +12,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.tabs.TabLayout;
 
-import com.example.edulearn.moodle.R;
+import com.example.edulearn.R;
 
 public class FragmentHomeActivity extends Fragment {
 

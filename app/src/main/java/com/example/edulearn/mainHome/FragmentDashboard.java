@@ -9,11 +9,11 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.edulearn.moodle.Courses.MobileApp.dashboardMobileApp;
-import com.example.edulearn.moodle.Courses.dashboardDatabases;
-import com.example.edulearn.moodle.Courses.dashboardMachineLearning;
-import com.example.edulearn.moodle.Courses.dashboardWebApp;
-import com.example.edulearn.moodle.R;
+import com.example.edulearn.Courses.MobileApp.dashboardMobileApp;
+import com.example.edulearn.Courses.dashboardDatabases;
+import com.example.edulearn.Courses.dashboardMachineLearning;
+import com.example.edulearn.Courses.dashboardWebApp;
+import com.example.edulearn.R;
 
 public class FragmentDashboard extends Fragment {
 

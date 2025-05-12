@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.edulearn.moodle.R;
+import com.example.edulearn.R;
 
 public class DetailTeacher1 extends AppCompatActivity {
 
