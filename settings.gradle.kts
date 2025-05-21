@@ -4,9 +4,6 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
-    plugins {
-        id("org.gradle.toolchains.foojay-resolver-convention") version "0.7.0"
-    }
 }
 
 dependencyResolutionManagement {
@@ -14,6 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Add JitPack repository for PDF viewer and other libraries
         maven { url = uri("https://jitpack.io") }
     }
 }

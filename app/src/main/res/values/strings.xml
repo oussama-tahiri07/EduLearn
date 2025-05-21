@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">EduLearn</string>
-    
+
     &lt;!-- Auth Strings -->
     <string name="login">Login</string>
     <string name="register">Register</string>
@@ -15,7 +15,13 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="no_account">Don\'t have an account?</string>
     <string name="have_account">Already have an account?</string>
-    
+
+    <!-- Missing strings that need to be added -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_continue">Login to continue your learning journey</string>
+    <string name="select_role">Select your role</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+
     &lt;!-- Navigation Strings -->
     <string name="home">Home</string>
     <string name="courses">Courses</string>
@@ -23,7 +29,7 @@
     <string name="quizzes">Quizzes</string>
     <string name="profile">Profile</string>
     <string name="notifications">Notifications</string>
-    
+
     &lt;!-- Course Strings -->
     <string name="all_courses">All Courses</string>
     <string name="my_courses">My Courses</string>
@@ -38,7 +44,7 @@
     <string name="course_name">Course Name</string>
     <string name="course_description">Course Description</string>
     <string name="course_duration">Course Duration (hours)</string>
-    
+
     &lt;!-- Lesson Strings -->
     <string name="lesson_details">Lesson Details</string>
     <string name="add_lesson">Add Lesson</string>
@@ -50,7 +56,7 @@
     <string name="attend_lesson">Attend Lesson</string>
     <string name="enter_otp">Enter OTP</string>
     <string name="otp_duration">OTP Duration (days)</string>
-    
+
     &lt;!-- Assignment Strings -->
     <string name="assignment_details">Assignment Details</string>
     <string name="add_assignment">Add Assignment</string>
@@ -62,7 +68,7 @@
     <string name="grade_assignment">Grade Assignment</string>
     <string name="grade">Grade</string>
     <string name="submission_date">Submission Date: %1$s</string>
-    
+
     &lt;!-- Quiz Strings -->
     <string name="quiz_details">Quiz Details</string>
     <string name="add_quiz">Add Quiz</string>
@@ -80,7 +86,7 @@
     <string name="take_quiz">Take Quiz</string>
     <string name="submit_quiz">Submit Quiz</string>
     <string name="quiz_grade">Quiz Grade: %1$d</string>
-    
+
     &lt;!-- General Strings -->
     <string name="submit">Submit</string>
     <string name="cancel">Cancel</string>

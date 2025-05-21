@@ -5,6 +5,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
 
+    <!-- Auth -->
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.edulearn.ui.auth.LoginFragment"
@@ -36,9 +37,6 @@
         android:label="Home"
         tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_homeFragment_to_courseDetailsFragment"
-            app:destination="@id/courseDetailsFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_notificationsFragment"
             app:destination="@id/notificationsFragment" />
     </fragment>
@@ -48,104 +46,6 @@
         android:name="com.example.edulearn.ui.courses.CoursesFragment"
         android:label="Courses"
         tools:layout="@layout/fragment_courses">
-        <action
-            android:id="@+id/action_coursesFragment_to_courseDetailsFragment"
-            app:destination="@id/courseDetailsFragment" />
-        <action
-            android:id="@+id/action_coursesFragment_to_createCourseFragment"
-            app:destination="@id/createCourseFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/courseDetailsFragment"
-        android:name="com.example.edulearn.ui.courses.CourseDetailsFragment"
-        android:label="Course Details"
-        tools:layout="@layout/fragment_course_details">
-        <argument
-            android:name="courseId"
-            app:argType="integer" />
-        <action
-            android:id="@+id/action_courseDetailsFragment_to_lessonDetailsFragment"
-            app:destination="@id/lessonDetailsFragment" />
-        <action
-            android:id="@+id/action_courseDetailsFragment_to_addLessonFragment"
-            app:destination="@id/addLessonFragment" />
-        <action
-            android:id="@+id/action_courseDetailsFragment_to_assignmentDetailsFragment"
-            app:destination="@id/assignmentDetailsFragment" />
-        <action
-            android:id="@+id/action_courseDetailsFragment_to_quizDetailsFragment"
-            app:destination="@id/quizDetailsFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/createCourseFragment"
-        android:name="com.example.edulearn.ui.courses.CreateCourseFragment"
-        android:label="Create Course"
-        tools:layout="@layout/fragment_create_course" />
-
-    <fragment
-        android:id="@+id/lessonDetailsFragment"
-        android:name="com.example.edulearn.ui.lessons.LessonDetailsFragment"
-        android:label="Lesson Details"
-        tools:layout="@layout/fragment_lesson_details">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="lessonId"
-            app:argType="integer" />
-        <action
-            android:id="@+id/action_lessonDetailsFragment_to_resourceViewerFragment"
-            app:destination="@id/resourceViewerFragment" />
-        <action
-            android:id="@+id/action_lessonDetailsFragment_to_attendLessonFragment"
-            app:destination="@id/attendLessonFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/addLessonFragment"
-        android:name="com.example.edulearn.ui.lessons.AddLessonFragment"
-        android:label="Add Lesson"
-        tools:layout="@layout/fragment_add_lesson">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/resourceViewerFragment"
-        android:name="com.example.edulearn.ui.lessons.ResourceViewerFragment"
-        android:label="Resource Viewer"
-        tools:layout="@layout/fragment_resource_viewer">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="lessonId"
-            app:argType="integer" />
-        <argument
-            android:name="resourceId"
-            app:argType="integer" />
-        <argument
-            android:name="resourceName"
-            app:argType="string" />
-        <argument
-            android:name="resourceType"
-            app:argType="string" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/attendLessonFragment"
-        android:name="com.example.edulearn.ui.lessons.AttendLessonFragment"
-        android:label="Attend Lesson"
-        tools:layout="@layout/fragment_attend_lesson">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="lessonId"
-            app:argType="integer" />
     </fragment>
 
     <fragment
@@ -153,102 +53,6 @@
         android:name="com.example.edulearn.ui.assignments.AssignmentsFragment"
         android:label="Assignments"
         tools:layout="@layout/fragment_assignments">
-        <action
-            android:id="@+id/action_assignmentsFragment_to_assignmentDetailsFragment"
-            app:destination="@id/assignmentDetailsFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/assignmentDetailsFragment"
-        android:name="com.example.edulearn.ui.assignments.AssignmentDetailsFragment"
-        android:label="Assignment Details"
-        tools:layout="@layout/fragment_assignment_details">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="assignmentId"
-            app:argType="integer" />
-        <action
-            android:id="@+id/action_assignmentDetailsFragment_to_submitAssignmentFragment"
-            app:destination="@id/submitAssignmentFragment" />
-        <action
-            android:id="@+id/action_assignmentDetailsFragment_to_assignmentSubmissionsFragment"
-            app:destination="@id/assignmentSubmissionsFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/submitAssignmentFragment"
-        android:name="com.example.edulearn.ui.assignments.SubmitAssignmentFragment"
-        android:label="Submit Assignment"
-        tools:layout="@layout/fragment_submit_assignment">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="assignmentId"
-            app:argType="integer" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/assignmentSubmissionsFragment"
-        android:name="com.example.edulearn.ui.assignments.AssignmentSubmissionsFragment"
-        android:label="Assignment Submissions"
-        tools:layout="@layout/fragment_assignment_submissions">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="assignmentId"
-            app:argType="integer" />
-        <action
-            android:id="@+id/action_assignmentSubmissionsFragment_to_gradeAssignmentFragment"
-            app:destination="@id/gradeAssignmentFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/gradeAssignmentFragment"
-        android:name="com.example.edulearn.ui.assignments.GradeAssignmentFragment"
-        android:label="Grade Assignment"
-        tools:layout="@layout/fragment_grade_assignment">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="assignmentId"
-            app:argType="integer" />
-        <argument
-            android:name="submissionId"
-            app:argType="integer" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/quizDetailsFragment"
-        android:name="com.example.edulearn.ui.quizzes.QuizDetailsFragment"
-        android:label="Quiz Details"
-        tools:layout="@layout/fragment_quiz_details">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="quizName"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_quizDetailsFragment_to_takeQuizFragment"
-            app:destination="@id/takeQuizFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/takeQuizFragment"
-        android:name="com.example.edulearn.ui.quizzes.TakeQuizFragment"
-        android:label="Take Quiz"
-        tools:layout="@layout/fragment_take_quiz">
-        <argument
-            android:name="courseName"
-            app:argType="string" />
-        <argument
-            android:name="quizName"
-            app:argType="string" />
     </fragment>
 
     <fragment

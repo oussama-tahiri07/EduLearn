@@ -28,16 +28,16 @@ public class ApiClient {
                     .addInterceptor(logging)
                     .addInterceptor(chain -> {
                         Request original = chain.request();
-                        
+
                         // Add auth token to requests if available
                         if (tokenManager != null && tokenManager.getToken() != null) {
                             Request.Builder requestBuilder = original.newBuilder()
                                     .header("Authorization", "Bearer " + tokenManager.getToken())
                                     .method(original.method(), original.body());
-                            
+
                             return chain.proceed(requestBuilder.build());
                         }
-                        
+
                         return chain.proceed(original);
                     })
                     .connectTimeout(60, TimeUnit.SECONDS)
