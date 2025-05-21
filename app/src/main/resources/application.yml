@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  spring:
+  datasource:
+    url: jdbc:postgresql://unuptaouttcpvfowoait.supabase.co:6543/postgres?sslmode=require
+    username: postgres
+    password: x6s4y#-RwkHCWUj  # Replace with your database password
+    hikari:
+      maximum-pool-size: 5
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+app:
+  supabase:
+    url: https://unuptaouttcpvfowoait.supabase.co
+    anon-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVudXB0YW91dHRjcHZmb3dvYWl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY5OTEyMjEsImV4cCI6MjA2MjU2NzIyMX0.osBHEOccWVWEgGw9UJg9j_TZBhN2kJEirBK2H2GaZYc  # From Supabase Settings > API

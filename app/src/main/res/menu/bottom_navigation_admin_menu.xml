@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adminDashboardFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/manageUsersFragment"
+        android:icon="@drawable/ic_person"
+        android:title="Users" />
+    <item
+        android:id="@+id/manageCoursesFragment"
+        android:icon="@drawable/ic_courses"
+        android:title="Courses" />
+    <item
+        android:id="@+id/manageAssignmentsFragment"
+        android:icon="@drawable/ic_assignments"
+        android:title="Assignments" />
+</menu>
